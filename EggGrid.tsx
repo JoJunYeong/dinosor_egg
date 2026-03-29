@@ -3,7 +3,7 @@
  * - CSS Grid layout for perfectly uniform cells
  * - Rows rendered as separate sub-components to avoid key issues
  * - Left: "목표점수" vertical label + row numbers
- * - Main: 26 cols × 16 rows egg cells
+ * - Main: 29 cols × 29 rows egg cells
  * - Bottom: "목표달성?" O/X row + "날짜" row
  */
 import { useApp } from "./AppContext";

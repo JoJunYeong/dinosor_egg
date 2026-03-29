@@ -39,8 +39,8 @@ describe("studentData.get", () => {
     const caller = appRouter.createCaller(createCtx());
     const result = await caller.studentData.get({ studentId: "s1" });
     expect(result.studentId).toBe("s1");
-    expect(result.eggs).toHaveLength(26); // GRID_COLS
-    expect(result.eggs[0]).toHaveLength(16); // GRID_ROWS
+    expect(result.eggs).toHaveLength(29); // GRID_COLS
+    expect(result.eggs[0]).toHaveLength(29); // GRID_ROWS
     expect(result.soundEnabled).toBe(true);
   });
 });

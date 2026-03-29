@@ -289,7 +289,7 @@ export default function TeacherSettings({ isOpen, onClose }: TeacherSettingsProp
 
           {activeTab === "goals" && (
             <div>
-              <p className="text-sm mb-3" style={{ color: "#8B7355" }}>각 열의 목표 개수를 설정하세요 (0~16)</p>
+              <p className="text-sm mb-3" style={{ color: "#8B7355" }}>각 열의 목표 개수를 설정하세요 (0~29)</p>
               {!currentStudent ? (
                 <p className="text-sm" style={{ color: "#A09080" }}>학생을 먼저 선택해주세요.</p>
               ) : (
@@ -300,7 +300,7 @@ export default function TeacherSettings({ isOpen, onClose }: TeacherSettingsProp
                       <input
                         type="number"
                         min="0"
-                        max="16"
+                        max="29"
                         value={goalInputs[i] || "0"}
                         onChange={(e) => setGoalInputs((prev) => ({ ...prev, [i]: e.target.value }))}
                         onBlur={() => handleGoalSave(i)}

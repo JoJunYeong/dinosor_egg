@@ -42,9 +42,9 @@ export type InsertStudent = typeof students.$inferInsert;
 export const studentData = mysqlTable("studentData", {
   id: int("id").autoincrement().primaryKey(),
   studentId: varchar("studentId", { length: 64 }).notNull(),
-  eggs: text("eggs").notNull(), // JSON: boolean[][] 26x16
-  dates: text("dates").notNull(), // JSON: string[] 26
-  goals: text("goals").notNull(), // JSON: number[] 26
+  eggs: text("eggs").notNull(), // JSON: boolean[][] 29x29
+  dates: text("dates").notNull(), // JSON: string[] 29
+  goals: text("goals").notNull(), // JSON: number[] 29
   soundEnabled: int("soundEnabled").default(0).notNull(), // 0=false, 1=true
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
 });

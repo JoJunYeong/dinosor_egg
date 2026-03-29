@@ -8,7 +8,7 @@ export const IMAGES = {
 
 // Grid configuration
 export const GRID_COLS = 29;
-export const GRID_ROWS = 16;
+export const GRID_ROWS = 29;
 export const TOTAL_CELLS = GRID_COLS * GRID_ROWS;
 export const MAX_STUDENTS = 30;
 export const MAX_NAME_LENGTH = 20;
@@ -22,9 +22,9 @@ export const LONG_PRESS_MS = 2000;
 export interface StudentData {
   id: string;
   name: string;
-  eggs: boolean[][]; // [col][row] - 29 cols x 16 rows
+  eggs: boolean[][]; // [col][row] - 29 cols x 29 rows
   dates: string[]; // 29 dates in M/D format
-  goals: number[]; // 29 goals (0-16)
+  goals: number[]; // 29 goals (0-29)
   soundEnabled: boolean;
 }
 
